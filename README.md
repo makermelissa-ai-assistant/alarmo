@@ -1,5 +1,3 @@
-(eval):5: parse error near `end'
-/Users/melissa/.rvm/scripts/rvm:29: operation not permitted: ps
 # Alarmo
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 
