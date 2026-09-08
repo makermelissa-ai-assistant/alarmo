@@ -1,5 +1,3 @@
-(eval):5: parse error near `end'
-/Users/melissa/.rvm/scripts/rvm:29: operation not permitted: ps
 """Tests for the Alarmo MQTT interface."""
 
 import json
