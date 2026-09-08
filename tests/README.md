@@ -1,3 +1,5 @@
+(eval):5: parse error near `end'
+/Users/melissa/.rvm/scripts/rvm:29: operation not permitted: ps
 # Alarmo Testing Guide
 
 ## To Run the Tests
@@ -72,6 +74,14 @@ OR to run a single test in a file:
 | `test_backend_arm_event_dispatched_on_arming` | Backend arm event dispatching |
 | `test_backend_disarm_event_dispatched_on_disarming` | Backend disarm event dispatching |
 | `test_backend_trigger_event_dispatched_on_triggering` | Backend trigger event dispatching |
+
+### **MQTT** (`test_mqtt.py`)
+
+| Test Function | Feature Tested |
+|---------------|----------------|
+| `test_sensor_state_snapshot` | Snapshot of normalized states for enabled configured sensors |
+| `test_area_sensor_state_snapshot` | Area-filtered snapshot on the derived event topic |
+| `test_sensor_state_changed` | Live normalized sensor state-change event |
 
 ### **Alarm Master** (`test_alarm_master.py`)
 
@@ -170,7 +180,7 @@ OR to run a single test in a file:
 
 | Feature/Test | Notes |
 |--------------|-------|
-| MQTT integration | No tests for MQTT state/event/command topic integration |
+| Existing MQTT alarm state and command handling | No tests for existing arm/disarm state/event/command behavior |
 | Sensor groups with more than two sensors | Only two-sensor groups tested |
 | Tamper sensor type | Referenced in original list but no specific tamper tests found |
 | Multiple alarm panel instances | Tests focus on single alarm panel scenarios |
